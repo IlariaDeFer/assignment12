@@ -29,13 +29,15 @@ button {
 }
 
 
+
 /* sidebar */
 
 .sidebar {
   background-color: #222222;
-  max-width: 30vh;
-  padding: 40px 30px 106px 30px;
-  height: 1080px;
+  max-width: 319px;
+  padding: 40px 30px 0 30px;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .sidebar-header {
@@ -101,7 +103,61 @@ button {
 
 /* header */
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 87px;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 20px;
+}
+
+.header-search {
+  flex: 1;
+  max-width: 446px;
+}
+
+.header-search, .header-profile {
+  display: flex;
+  align-items: center;
+}
+
+.header-profile {
+  gap: 30px;
+}
+
+.search {
+  font-size: 14px;
+  opacity: 50%;
+  border: none;
+  background-color: #F8F8F8;
+  padding: 18px 50px 19px 20px;
+  width: 100%;
+}
+
+.search-img {
+  margin-left: -40px;
+  z-index: 1;
+}
+
+.header-link {
+  color: #FF2288;
+  font-size: 14px;
+}
+
+.upload-button {
+  border: none;
+  background-color: #FF2288;
+  padding: 20px 40px;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+}
+
 /* main */
+
+/* section-designer */
 
 /* footer */
 
