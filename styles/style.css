@@ -46,6 +46,14 @@ button {
   overflow-y: auto;
 }
 
+.button-bg {
+  background-color: #F2F2F2;
+} 
+
+.transition {
+  transition: 200ms all ease-in;
+}
+
 /* sidebar */
 
 .sidebar {
@@ -59,7 +67,7 @@ button {
 .sidebar-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 125px;
+  margin-bottom: 106px;
 }
 
 .sidebar-logo {
@@ -79,17 +87,20 @@ button {
 
 .sidebar-buttons a {
   color: white;
-}
-
-.sidebar-buttons li {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 51px;
+  padding: 18px 205px 18px 30px;
+  border-radius: 12px;
+}
+
+.sidebar-buttons a:hover {
+  background-color: #FF2288;
+  
 }
 
 .followings {
-  padding-left: 0;
+  padding-left: 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -157,6 +168,10 @@ button {
   z-index: 1;
 }
 
+.search-img:hover {
+  background-color: #D2D2D2;
+}
+
 .header-link {
   color: #FF2288;
   font-size: 14px;
@@ -169,6 +184,10 @@ button {
   border-radius: 12px;
   color: white;
   font-size: 14px;
+}
+
+.upload-button:hover {
+  background-color: #dd2288;
 }
 
 /* main */
@@ -184,10 +203,26 @@ button {
   margin-bottom: 40px;
 }
 
+.card-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.card-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-nav a:hover {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+}
+
 .filter-nav {
   display: flex;
-  gap: 50px;
-  padding-left: 18px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .filter {
@@ -198,6 +233,7 @@ button {
 .filter-nav a {
   color: #222222;
   font-size: 16px;
+  padding: 16px 20px;
 }
 
 .filter-button {
@@ -207,17 +243,25 @@ button {
   padding: 16px 27px 19px 63px;
 }
 
+.filter-button:hover {
+  background-color: #D2D2D2;
+}
+
 .filter img {
   margin-right: -48px;
   z-index: 1;
 }
 
-.main-grid img {
+.card img {
   width: 100%;
   height: 210px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 16px;
+}
+
+.card {
+  position: relative;
 }
 
 .main-grid {
@@ -232,10 +276,34 @@ button {
   color: #222222;
 }
 
+.card-icons img {
+  width: 34px;
+  height: 34px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 5px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.card-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 15px;
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.card:hover .card-icons {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .load-button button {
   font-size: 16px;
   border: none;
-  background-color: #F2F2F2;
   padding: 16px 108px;
   border-radius: 12px;
   margin-top: 70px;
@@ -244,6 +312,10 @@ button {
 .load-button {
   display: flex;
   justify-content: center;
+}
+
+.load-button button:hover {
+  background-color: #D2D2D2;
 }
 
 .section-designer {
@@ -269,10 +341,15 @@ button {
   opacity: 30%;
 }
 
+.designer-title a:hover {
+  opacity: 1;
+}
+
 .designer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 
 .designer-name {
@@ -304,70 +381,12 @@ button {
   margin-top: 17px;
 }
 
-.follow-buttons {
-  padding: 12px 36px;
+.follow-button:hover {
+  background-color: #D2D2D2;
 }
 
-main {
-  margin-bottom: 60px;
-}
-
-/* section-designer */
-
-.section-designer {
-  background-color: #FAFAFA;
-  padding-top: 67px;
-  padding-bottom: 60px;
-}
-
-.designer-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.section-title {
-  font-size: 32px;
-  font-weight: lighter;
-}
-
-.designer-title a {
-  font-size: 14px;
-  color: #222222;
-  opacity: 30%;
-}
-
-.designer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.name {
-  font-size: 16px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.designer span {
-  font-style: 12px;
-  color: #222222;
-  opacity: 60%;
-}
-
-.grid-designer {
-  display: flex;
-  gap: 25px;
-  margin-top: 54px;
-  flex-wrap: wrap;
-}
-
-.follow-button, .follow-buttons {
-  border: 1px solid #D8D8D8;
-  font-size: 14px;
-  padding: 12px 47px;
-  border-radius: 12px;
-  margin-top: 17px;
+.follow-buttons:hover {
+  background-color: #D2D2D2;
 }
 
 .follow-buttons {
@@ -398,6 +417,7 @@ main {
 .footer-nav a {
   font-size: 16px;
   color: #222222;
+  gap: 5px;
 }
 
 .footer-nav li {
@@ -420,3 +440,6 @@ main {
   font-size: 16px;
 }
 
+.footer-nav a:hover {
+  color: #FF2288;
+}

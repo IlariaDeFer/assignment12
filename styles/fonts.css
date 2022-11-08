@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Metropolis-Medium.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Metropolis-Bold.otf);
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: Avenir;
+  src: url(../fonts/Metropolis-Light.otf);
+  font-weight: lighter;
+}
