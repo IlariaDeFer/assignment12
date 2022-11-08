@@ -15,15 +15,16 @@
   width: 100%;
   border-spacing: 0;
   margin-bottom: 62px;
+  border-collapse: collapse;
 }
 
 .main-table td, .main-table th {
   padding: 24px 30px 27px 30px;
+  transition: 200ms border-radius ease-in;
 }
 
 .main-table th {
   text-align: left;
-  
 }
 
 .main-table tr, .main-table tbody {
@@ -53,7 +54,7 @@
   color: #FF2288;
 }
 
-.main-table th, .main-table td {
+.main-table tr {
   border-bottom: 1px solid #ddd;
 }
 

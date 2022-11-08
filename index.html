@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="List of designs">
+  <meta property="og:title" content="Design Today" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="List of designs" />
+  <meta property="og:url" content="https://ilariadefer.github.io/assignment12/" />
+  <meta property="og:image" content="https://ilariadefer.github.io/assignment12/images/logo.png" />
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/media.css">
   <title>assignment12</title>
 </head>
+
 <body>
   <div class="main">
     <div class="sidebar">
       <div class="sidebar-header">
         <img class="sidebar-logo" src="images/logo.png" alt="logo">
-        <img src="images/Group7.svg" alt="icon">
+        <button class="hamburger-button">
+          <img src="images/hamburger.svg" alt="icon">
+        </button>
       </div>
       <nav class="sidebar-menu">
         <ul class="sidebar-buttons">
@@ -69,9 +79,14 @@
     <div class="main-content">
       <header>
         <div class="header-content">
-          <div class="header-search">
-            <input class="search" type="search" placeholder="Search inspiration">
-            <img class="icon search-img" src="images/Component92.svg" alt="search">
+          <div class="header-left">
+            <button class="hamburger-button">
+              <img src="images/hamburger-black.svg" alt="icon">
+            </button>
+            <div class="header-search">
+              <input class="search" type="search" placeholder="Search inspiration">
+              <img class="icon search-img" src="images/Component92.svg" alt="search">
+            </div>
           </div>
           <div class="header-profile">
             <a class="header-link">GO PRO!</a>
@@ -81,7 +96,7 @@
             <a class="icon" href="#">
               <img class="header-icon" src="images/Component72.svg" alt="icon">
             </a>
-            <a href="/html/order.html">
+            <a href="/html/orders.html">
               <img class="profile-picture" src="images/Group33.png" alt="profile-picture">
             </a>
             <button class="upload-button" type="button">UPLOAD</button>
@@ -383,13 +398,19 @@
           </div>
           <div class="copyright">
             <div class="copyright-logos">
-              <img class="icon" src="images/Component122.svg" alt="icon">
-              <img class="icon" src="images/Component132.svg" alt="icon">
-              <img class="icon" src="images/Component142.svg" alt="icon">
+              <a href="#" class="copyright-link">
+                <img class="icon" src="images/Component122.svg" alt="icon">
+              </a>
+              <a href="#" class="copyright-link">
+                <img class="icon" src="images/Component132.svg" alt="icon">
+              </a>
+              <a href="#" class="copyright-link">
+                <img class="icon" src="images/Component142.svg" alt="icon">
+              </a>
             </div>
             <div class="copyright-name">
               <span class="for">For</span>
-              <span class="academy">Smartacademy</span>
+              <span class="academy"><a href="https://smartacademy.ge/">Smartacademy</a></span>
             </div>
           </div>
         </div>
@@ -397,4 +418,5 @@
     </div>
   </div>
 </body>
+
 </html>

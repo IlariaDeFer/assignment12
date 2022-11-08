@@ -50,6 +50,10 @@ button {
   background-color: #F2F2F2;
 } 
 
+.button-bg:hover {
+  background-color: #D2D2D2;
+}
+
 .transition {
   transition: 200ms all ease-in;
 }
@@ -67,6 +71,7 @@ button {
 .sidebar-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 106px;
 }
 
@@ -96,7 +101,21 @@ button {
 
 .sidebar-buttons a:hover {
   background-color: #FF2288;
-  
+}
+
+.hamburger-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 26px;
+  height: 11px;
+  padding: 0;
+}
+
+.hamburger-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .followings {
@@ -126,8 +145,6 @@ button {
   font-style: 14px;
 }
 
-
-
 /* header */
 
 .header-content {
@@ -138,6 +155,17 @@ button {
   padding-left: 20px;
   padding-right: 20px;
   gap: 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.header-left .hamburger-button {
+  display: none;
 }
 
 .header-search {
@@ -161,6 +189,11 @@ button {
   background-color: #F8F8F8;
   padding: 18px 50px 19px 20px;
   width: 100%;
+}
+
+.search:focus {
+  border: none;
+  outline: none;
 }
 
 .search-img {
@@ -243,10 +276,6 @@ button {
   padding: 16px 27px 19px 63px;
 }
 
-.filter-button:hover {
-  background-color: #D2D2D2;
-}
-
 .filter img {
   margin-right: -48px;
   z-index: 1;
@@ -314,10 +343,6 @@ button {
   justify-content: center;
 }
 
-.load-button button:hover {
-  background-color: #D2D2D2;
-}
-
 .section-designer {
   background-color: #FAFAFA;
   padding-top: 67px;
@@ -381,14 +406,6 @@ button {
   margin-top: 17px;
 }
 
-.follow-button:hover {
-  background-color: #D2D2D2;
-}
-
-.follow-buttons:hover {
-  background-color: #D2D2D2;
-}
-
 .follow-buttons {
   padding: 12px 36px;
 }
@@ -438,6 +455,10 @@ main {
 .academy {
   font-weight: bold;
   font-size: 16px;
+}
+
+.academy a {
+  color: black;
 }
 
 .footer-nav a:hover {

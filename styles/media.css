@@ -10,20 +10,27 @@
   .sidebar {
     display: none;
   }
-
-  .sidebar-header img {
-    width: 30px;
-    height: 15px;
-    background-color: black;
-  }
   
-
   /* header */
 
+  .header-content {
+    flex-wrap: wrap ;
+  }
+
+  .header-profile {
+    flex-wrap: wrap;
+  }
+
   .search {
-    max-width: 20px;
-    background-color: #D2D2D2;
-    border-radius: 12px;
+    display: none;
+  }
+
+  .search-img {
+    margin-left: 0;
+  }
+
+  .header-left .hamburger-button {
+    display: block;
   }
 
   /* main */

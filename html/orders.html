@@ -5,8 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="List of orders">
+  <meta property="og:title" content="Design Today" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="List of orders" />
+  <meta property="og:url" content="https://ilariadefer.github.io/assignment12/html/orders.html" />
+  <meta property="og:image" content="https://ilariadefer.github.io/assignment12/images/logo.png" />
   <link rel="stylesheet" href="../styles/fonts.css">
   <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/media.css">
   <link rel="stylesheet" href="../styles/orders.css">
   <link rel="stylesheet" href="../styles/orders-media.css">
   <title>order</title>
@@ -17,24 +24,24 @@
     <div class="sidebar">
       <div class="sidebar-header">
         <img class="sidebar-logo" src="../images/logo.png" alt="logo">
-        <img src="../images/Group7.svg" alt="icon">
+        <img src="../images/hamburger.svg" alt="icon">
       </div>
       <nav class="sidebar-menu">
         <ul class="sidebar-buttons">
           <li>
-            <a href="#"><img class="icon" src="../images/Component52.svg" alt="icon">Home</a>
+            <a href="#" class="transition"><img class="icon" src="../images/Component52.svg" alt="icon">Home</a>
           </li>
           <li>
-            <a href="#"><img class="icon" src="../images/Component32.svg" alt="icon">Explore</a>
+            <a href="#" class="transition"><img class="icon" src="../images/Component32.svg" alt="icon">Explore</a>
           </li>
           <li>
-            <a href="#"><img class="icon" src="../images/Component42.svg" alt="icon">Folders</a>
+            <a href="#" class="transition"><img class="icon" src="../images/Component42.svg" alt="icon">Folders</a>
           </li>
           <li>
-            <a href="#"><img class="icon" src="../images/Component82.svg" alt="icon">Favourites</a>
+            <a href="#" class="transition"><img class="icon" src="../images/Component82.svg" alt="icon">Favourites</a>
           </li>
           <li>
-            <a href="#"><img class="icon" src="../images/Component12.svg" alt="icon">Activites</a>
+            <a href="#" class="transition"><img class="icon" src="../images/Component12.svg" alt="icon">Activites</a>
           </li>
         </ul>
       </nav>
@@ -72,9 +79,14 @@
     <div class="main-content">
       <header>
         <div class="header-content">
-          <div class="header-search">
-            <input class="search" type="search" placeholder="Search inspiration">
-            <img class="icon search-img" src="../images/Component92.svg" alt="search">
+          <div class="header-left">
+            <button class="hamburger-button">
+              <img src="../images/hamburger-black.svg" alt="icon">
+            </button>
+            <div class="header-search">
+              <input class="search" type="search" placeholder="Search inspiration">
+              <img class="icon search-img" src="../images/Component92.svg" alt="search">
+            </div>
           </div>
           <div class="header-profile">
             <a class="header-link">GO PRO!</a>
@@ -296,13 +308,19 @@
           </div>
           <div class="copyright">
             <div class="copyright-logos">
-              <img class="icon" src="../images/Component122.svg" alt="icon">
-              <img class="icon" src="../images/Component132.svg" alt="icon">
-              <img class="icon" src="../images/Component142.svg" alt="icon">
+              <a href="#" class="copyright-link">
+                <img class="icon" src="../images/Component122.svg" alt="icon">
+              </a>
+              <a href="#" class="copyright-link">
+                <img class="icon" src="../images/Component132.svg" alt="icon">
+              </a>
+              <a href="#" class="copyright-link">
+                <img class="icon" src="../images/Component142.svg" alt="icon">
+              </a>
             </div>
             <div class="copyright-name">
               <span class="for">For</span>
-              <span class="academy">Smartacademy</span>
+              <span class="academy"><a href="https://smartacademy.ge/">Smartacademy</a></span>
             </div>
           </div>
         </div>
